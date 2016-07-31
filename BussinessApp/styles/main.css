@@ -1,0 +1,48 @@
+body, header, canvas, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+#nav, #main {
+    max-width: 1000px;
+}
+#nav {
+    background-color: lightgray;
+}
+
+#nav-list {
+    list-style-type: none;
+}
+
+#nav-list .list-item {
+    padding: 5px;
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+}
+
+#nav-list .list-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+#main #search{
+    background-color: lightgoldenrodyellow;
+    color: darkslateblue;
+    text-align: center;
+}
+#remove {
+    padding: 5px;
+    text-align: center;
+    background-color: #27C4AC;
+    color: white;
+}
+#stat {
+    border: 1px solid black;
+}
+iframe {
+    width: 650px;
+    height: 500px;
+}
+.hide {
+    display: none;
+}

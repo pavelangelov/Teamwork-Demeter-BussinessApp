@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demeter Network</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <header id="header">
+        <canvas id="logo">
+
+        </canvas>
+        <nav id="nav">
+            <ul id="nav-list"">
+                <li class="list-item">
+                    <a href="#" data-id="search">Search custimer</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" data-id="add">Add new custimer</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" data-id="remove">Remove customer</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" data-id="statistic">Show payment statistic</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" data-id="contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="search" class="hide">
+           <fieldset for="search">
+               <legend>Search customer by addres</legend>
+                <span>Block</span>
+                <input type="text" name="">
+                <span>Apartament</span>
+                <input type="text" name="">
+            </fieldset>
+        </div>
+        <div id="add" class="hide">
+           <fieldset for="add">
+               <legend>Add new customer</legend>
+               <form action="create-customer">
+               <span>Район</span>
+               <select>
+                   <option value="Borovo">Борово</option>
+                   <option value="Banishora">Банишора</option>
+                   <option value="Drujba">Дружба</option>
+                   <option value="Dragalevci">Драгалевци</option>
+                   <option value="Nadejda">Надежда</option>
+                   <option value="Lulin">Люлин</option>
+                   <option value="Mladost">Младост</option>
+                   <option value="Obelya">Обеля</option>
+                   <option value="OK">Овча Купел</option>
+                   <option value="Simeonovo">Симеоново</option>
+                   <option value="Filipovci">Филиповци</option>
+                   <option value="Center">Център</option>
+               </select>
+                <span>Улица</span>
+                <input type="text" name="street">
+                <span>Блок</span>
+                <input type="text" name="">
+                <span>Апартамент</span>
+                <input type="text" name="">
+                <br>
+                <span>Тарифен план</span>
+                <select>
+                    <option value="net20">Интернет 20 mb/s</option>
+                    <option value="net30">Интернет 30 mb/s</option>
+                    <option value="net40">Интернет 40 mb/s</option>
+                    <option value="net50">Интернет 50 mb/s</option>
+                    <option value="net100">Интернет 100 mb/s</option>
+                </select>
+                <span>Телефон</span>
+                <input type="tel" name="" value="">
+                <span>Email</span>
+                <input type="email" name="" value="">
+                <input type="submit" name="" value="Submit">
+                <input type="reset" name="" value="Reset">
+               </form>
+            </fieldset>
+        </div>
+        <div id="remove" class="hide">
+            <span>Въведете ID на акаунта който искате да премахнете</span>
+            <input type="number" name="" value="">
+        </div>
+        <div id="statistic" class="hide">
+            <img src="images/pays-scale.png" id="stat-img" style="display: none">
+            <canvas id="stat"></canvas>
+        </div>
+        <div id="contacts" class="hide">
+            <dl>
+                <dt>Адрес: </dt>
+                <dd>гр. София 1729, ж.к. Младост 1А, бул. "Ал. Малинов" 31, сградата на Progress, зала Ultimate</dd>
+            </dl>
+            <a href="http://maps.google.com/maps?q=42.65095,23.379413&t=h&z=17">
+                <iframe src="https://maps.google.com/maps?q=Telerik+Academy&hl=bg&ie=UTF8&z=17&iwloc=&t=k&output=embed"></iframe>
+            </a>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
